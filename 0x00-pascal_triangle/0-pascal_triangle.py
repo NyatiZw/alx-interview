@@ -5,7 +5,7 @@
 
 def pascal_triangle(n):
     """
-    Generates Pascal's triangle up to the nth row 
+    Generates Pascal's triangle up to the nth row
 
 
     :param n: number of rows to generate
@@ -25,3 +25,7 @@ def pascal_triangle(n):
         triangle.append(row)
 
     return triangle
+
+
+if __name__ == '__main__':
+    main()
