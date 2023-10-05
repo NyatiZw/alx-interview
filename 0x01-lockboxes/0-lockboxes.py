@@ -14,22 +14,23 @@ def canUnlockAll(boxes):
     """
     # Initialize a list to keep track of visited boxes
     visited = [False] * len(boxes)
-    visited[0] = True # First box already unlocked
+    visited[0] = True """ First box already unlocked """
 
     # Intialize a queue
     queue = [0]
 
     while queue:
-        current_box = queue.pop(0) # Get the current box
+        current_box = queue.pop(0) """ Get the current box """
 
         # Iterate trough the keys in the current box
         for key in boxes[current_box]:
-            # If the key corresponds to a box that hasn't been visited, mark as visited
+            """
+                If the key corresponds to a box
+                that hasn't been visited, mark as visited
+            """
             if not visited[key]:
                 visited[key] = True
                 queue.append(key)
-
-
     # If all boxes have been visited, return True; otherwise, return False
     return all(visited)
 
@@ -37,4 +38,4 @@ def canUnlockAll(boxes):
 if __name__ == "__main__":
     boxes = [[1], [2], [3], [0]]
     result = canUnlockAll(boxes)
-    print(result) # Should print True
+    print(result) """ Should print True """
