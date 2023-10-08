@@ -7,7 +7,7 @@ def canUnlockAll(boxes):
     Check if all boxes can be opened.
 
     Args:
-        boxes : A list of boxes
+        boxes : A list of lists
 
     Returns:
         bool: True if all boxes can be opened, else False.
@@ -32,6 +32,6 @@ def canUnlockAll(boxes):
 
 
 if __name__ == "__main__":
-    boxes = [[1], [2], [3], [0]]
+    boxes = [[1], [2], [3], []]
     result = canUnlockAll(boxes)
     print(result)
