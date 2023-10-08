@@ -13,7 +13,7 @@ def canUnlockAll(boxes):
         bool: True if all boxes can be opened, else False.
     """
     visited = [False] * len(boxes)
-    visited[0] = True """ First box already unlocked """
+    visited[0] = True
 
     queue = [0]
 
@@ -22,8 +22,8 @@ def canUnlockAll(boxes):
 
         for key in boxes[current_box]:
             """
-                If the key corresponds to a box
-                that hasn't been visited, mark as visited
+            If the key corresponds to a box
+            that hasn't been visited, mark as visited
             """
             if not visited[key]:
                 visited[key] = True
