@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Method to validate UTF-8 encoding"""
 
+
 def validUTF8(data):
     """Function to check if a byte is a valid UTF-8"""
     def is_continuation(byte):
@@ -39,4 +40,3 @@ def validUTF8(data):
                 return False
 
     return True
-
