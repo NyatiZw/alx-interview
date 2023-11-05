@@ -5,11 +5,13 @@
 
 import sys
 
+
 def is_valid(board, row, col):
     for i in range(row):
-        if board[i] == col or abs(board[i] - col) == abs(i -row):
+        if board[i] == col or abs(board[i] - col) == abs(i - row):
             return False
     return True
+
 
 def solve_nqueens(N):
     def backtrack(row):
@@ -28,6 +30,7 @@ def solve_nqueens(N):
     backtrack(0)
 
     return results
+
 
 def main():
     if len(sys.argv) != 2:
