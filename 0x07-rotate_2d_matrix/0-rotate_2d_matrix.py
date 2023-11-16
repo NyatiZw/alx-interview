@@ -10,19 +10,11 @@ def rotate_2d_matrix(matrix):
 
     :param matrix: The input matrix to be rotated
     """
-    n = len(matrix)
+    n = len(matrix[0])
 
-    # Transpose the matrix
     for i in range(n):
         for j in range(i + 1, n):
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
 
-    # Reverse each row to get the final result
-    for i in range(n - 1):
+    for i in range(n):
         matrix[i].reverse()
-
-    print(matrix)
-
-
-if __name__ == "__main__":
-    pass
