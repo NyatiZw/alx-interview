@@ -7,7 +7,6 @@ if (process.argv.length > 2) {
     if (err) {
       console.log(err);
     }
-
     const charactersURL = JSON.parse(body).characters;
     const charactersName = charactersURL.map(
       url => new Promise((resolve, reject) => {
