@@ -1,11 +1,17 @@
 #!/usr/bin/python3
 """function that returns perimeter of island"""
 
+
 def island_perimeter(grid):
+    """
+    Input: List of Lists
+    Returns: Perimeter
+    """
     if not grid or not grid[0]:
         return 0
 
-    rows, cols = len(grid), len(grid[0])
+    rows = len(grid)
+    cols = len(grid[0])
     perimeter = 0
 
     for i in range(rows):
@@ -18,4 +24,3 @@ def island_perimeter(grid):
                     perimeter -= 2
 
     return perimeter
-
